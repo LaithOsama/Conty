@@ -35,9 +35,18 @@ devel_pkgs="base-devel git meson mingw-w64-gcc cmake"
 # Apart from packages from the official Arch repos, you can also specify
 # packages from the Chaotic-AUR repo
 export packagelist="${audio_pkgs} ${video_pkgs} ${wine_pkgs} ${devel_pkgs} \
-	nano ttf-dejavu ttf-liberation lutris steam firefox mpv geany pcmanfm \
-	htop qbittorrent speedcrunch gpicview file-roller xorg-xwayland \
-	steam-native-runtime gamemode lib32-gamemode jre17-openjdk lxterminal \
+	anki atool audacious audacity beets blender calibre \
+	chromaprint cmus dwarfs element-desktop fooyin freetube \
+	fzf gallery-dl gimp go google-earth-pro grafx2 htop-vim inkscape \
+	jre17-openjdk kodi krita lf libreoffice-fresh libreoffice-fresh-ar \
+ 	libresprite mpc mpd mtpaint ncmpcpp neovim netsurf \
+	newsboat nicotine+ nim nsxiv pandoc palemoon picard piper-tts-bin \
+	python-discogs-client python-pyacoustid python-pylast \
+	python-requests qemu-base qutebrowser scrcpy streamrip strawberry \
+	shellcheck surf tesseract-ocr tesseract-data-ara tesseract-data-eng \
+	tesseract-data-jpn telegram-desktop transmission-qt zathura zathura-pdf-mupdf zig \
+	ttf-dejavu ttf-liberation lutris steam mpv xorg-xwayland \
+	steam-native-runtime gamemode lib32-gamemode jre17-openjdk \
 	steamtinkerlaunch mangohud lib32-mangohud qt6-wayland wayland \
 	lib32-wayland qt5-wayland retroarch xorg-server-xephyr openbox \
 	obs-studio gamehub minigalaxy legendary gamescope prismlauncher yt-dlp \
@@ -45,10 +54,10 @@ export packagelist="${audio_pkgs} ${video_pkgs} ${wine_pkgs} ${devel_pkgs} \
 	libretro-blastem libretro-bsnes libretro-dolphin duckstation \
 	libretro-gambatte libretro-melonds libretro-mgba libretro-nestopia \
 	libretro-parallel-n64 libretro-pcsx2 libretro-picodrive libretro-ppsspp \
-	libretro-retrodream libretro-yabause sunshine nautilus genymotion"
+	libretro-retrodream libretro-yabause sunshine"
 
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist=""
+export aur_packagelist="brave-bin floorp-bin librewolf-bin vesktop-bin vscodium-bin"
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
