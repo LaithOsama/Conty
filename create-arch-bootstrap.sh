@@ -6,11 +6,10 @@
 ########################################################################
 
 # Package groups
-audio_pkgs="alsa-lib lib32-alsa-lib alsa-plugins lib32-alsa-plugins libpulse \
+audio_pkgs="alsa-lib lib32-alsa-lib alsa-plugins bluealsa bluez lib32-alsa-plugins libpulse \
 	lib32-libpulse jack2 lib32-jack2 alsa-tools alsa-utils pipewire lib32-pipewire"
 
-video_pkgs="mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon \
-	vulkan-intel lib32-vulkan-intel \
+video_pkgs="mesa lib32-mesa vulkan-intel lib32-vulkan-intel \
 	vulkan-icd-loader lib32-vulkan-icd-loader vulkan-mesa-layers \
 	lib32-vulkan-mesa-layers libva-mesa-driver lib32-libva-mesa-driver \
 	libva-intel-driver lib32-libva-intel-driver intel-media-driver \
@@ -28,36 +27,34 @@ wine_pkgs="wine-staging winetricks-git wine-nine wineasio \
 	gst-plugins-ugly gst-plugins-base lib32-gst-plugins-good \
 	lib32-gst-plugins-base gst-libav wget gst-plugin-pipewire"
 
-devel_pkgs="base-devel git meson mingw-w64-gcc cmake"
+devel_pkgs=""
 
 # Packages to install
 # You can add packages that you want and remove packages that you don't need
 # Apart from packages from the official Arch repos, you can also specify
 # packages from the Chaotic-AUR repo
 export packagelist="${audio_pkgs} ${video_pkgs} ${wine_pkgs} ${devel_pkgs} \
-	anki atool audacious audacity beets blender calibre \
-	chromaprint cmus dwarfs element-desktop fooyin freetube \
-	fzf gallery-dl gimp go google-earth-pro grafx2 htop-vim inkscape \
-	jre17-openjdk kodi krita lf libreoffice-fresh libreoffice-fresh-ar \
- 	libresprite mpc mpd mtpaint ncmpcpp neovim netsurf \
-	newsboat nicotine+ nim nsxiv pandoc palemoon picard piper-tts-bin \
+	anki audacious audacity beets blender calibre \
+	chromaprint dwarfs element-desktop fooyin freetube \
+ 	gallery-dl gimp grafx2 inkscape kodi libresprite \
+	krita lf libreoffice-fresh libreoffice-fresh-ar mtpaint \
+	nicotine+ nsxiv palemoon picard piper-tts-bin \
 	python-discogs-client python-pyacoustid python-pylast \
 	python-requests qemu-base qutebrowser scrcpy streamrip strawberry \
 	shellcheck surf tesseract-ocr tesseract-data-ara tesseract-data-eng \
-	tesseract-data-jpn telegram-desktop transmission-qt zathura zathura-pdf-mupdf zig \
-	ttf-dejavu ttf-liberation lutris steam mpv xorg-xwayland \
+	transmission-qt zathura zathura-pdf-mupdf lutris steam mpv xorg-xwayland \
 	steam-native-runtime gamemode lib32-gamemode jre17-openjdk \
 	steamtinkerlaunch mangohud lib32-mangohud qt6-wayland wayland \
-	lib32-wayland qt5-wayland retroarch xorg-server-xephyr openbox \
-	obs-studio gamehub minigalaxy legendary gamescope prismlauncher yt-dlp \
+	lib32-wayland qt5-wayland retroarch xorg-server-xephyr \
+	gamehub minigalaxy legendary gamescope prismlauncher \
 	bottles playonlinux minizip retroarch-assets-ozone libretro-beetle-psx-hw \
 	libretro-blastem libretro-bsnes libretro-dolphin duckstation \
 	libretro-gambatte libretro-melonds libretro-mgba libretro-nestopia \
 	libretro-parallel-n64 libretro-pcsx2 libretro-picodrive libretro-ppsspp \
-	libretro-retrodream libretro-yabause sunshine"
+	libretro-retrodream libretro-yabause"
 
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist="brave-bin floorp-bin librewolf-bin vesktop-bin vscodium-bin"
+export aur_packagelist="brave-bin librewolf-bin vesktop-bin vscodium-bin"
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
