@@ -37,10 +37,10 @@ export packagelist="${audio_pkgs} ${video_pkgs} ${wine_pkgs} ${devel_pkgs} \
 	anki audacious audacity beets blender calibre \
 	chromaprint dwarfs element-desktop fooyin freetube \
  	gallery-dl gimp grafx2 inkscape kodi libresprite \
-	krita lf libreoffice-fresh libreoffice-fresh-ar mtpaint \
-	nicotine+ nsxiv palemoon picard piper-tts-bin \
+	krita lf libreoffice-fresh libreoffice-fresh-ar \
+	mtpaint nicotine+ nsxiv palemoon picard \
 	python-discogs-client python-pyacoustid python-pylast \
-	python-requests qemu-base qutebrowser scrcpy streamrip strawberry \
+	python-requests qutebrowser scrcpy streamrip strawberry \
 	shellcheck surf tesseract-ocr tesseract-data-ara tesseract-data-eng \
 	transmission-qt zathura zathura-pdf-mupdf lutris steam mpv xorg-xwayland \
 	steam-native-runtime gamemode lib32-gamemode jre17-openjdk \
@@ -54,7 +54,7 @@ export packagelist="${audio_pkgs} ${video_pkgs} ${wine_pkgs} ${devel_pkgs} \
 	libretro-retrodream libretro-yabause"
 
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist="brave-bin librewolf-bin vesktop-bin vscodium-bin"
+export aur_packagelist="brave-bin vesktop-bin vscodium-bin"
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
