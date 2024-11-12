@@ -6,7 +6,7 @@
 ########################################################################
 
 # Package groups
-audio_pkgs="alsa-lib lib32-alsa-lib alsa-plugins lib32-alsa-plugins libpulse \
+audio_pkgs="alsa-lib lib32-alsa-lib alsa-plugins bluealsa bluez lib32-alsa-plugins libpulse \
 	lib32-libpulse alsa-tools alsa-utils pipewire lib32-pipewire pipewire-pulse pipewire-jack lib32-pipewire-jack"
 
 core_pkgs="xorg-xwayland qt6-wayland wayland \
@@ -49,7 +49,13 @@ gaming_pkgs="lutris steam steam-native-runtime steamtinkerlaunch minigalaxy \
 	libretro-parallel-n64 libretro-pcsx2 libretro-picodrive libretro-ppsspp \
 	libretro-retrodream libretro-yabause pcsx2-avx-git"
 
-extra_pkgs="ttf-dejavu ttf-liberation jre17-openjdk"
+extra_pkgs="anki audacious beets calibre chromaprint dwarfs element-desktop fooyin \
+	freetube gallery-dl gimp inkscape kodi libresprite krita \
+ 	libreoffice-fresh libreoffice-fresh-ar mpv mtpaint nicotine+ \
+  	picard python-discogs-client python-pyacoustid python-pylast \
+   	python-requests qutebrowser streamrip shellcheck surf quickmedia-git \
+    	tesseract-ocr tesseract-data-ara tesseract-data-eng transmission-qt \
+	zathura zathura-pdf-mupdf"
 
 # Packages to install
 # You can add packages that you want and remove packages that you don't need
@@ -58,7 +64,7 @@ extra_pkgs="ttf-dejavu ttf-liberation jre17-openjdk"
 export packagelist="${audio_pkgs} ${core_pkgs} ${video_pkgs} ${extra_pkgs}"
 
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist=""
+export aur_packagelist="brave-bin vesktop-bin vscodium-bin betterbird-bin floorp-bin seamonkey-bin"
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
