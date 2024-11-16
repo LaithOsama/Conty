@@ -53,9 +53,8 @@ extra_pkgs="anki audacious beets calibre chromaprint dwarfs element-desktop fooy
 	freetube gallery-dl gimp inkscape kodi libresprite krita \
  	libreoffice-fresh libreoffice-fresh-ar mpv mtpaint nicotine+ \
   	picard python-discogs-client python-pyacoustid python-pylast \
-   	python-requests qutebrowser streamrip shellcheck surf quickmedia-git \
-    	tesseract-ocr tesseract-data-ara tesseract-data-eng transmission-qt \
-	zathura zathura-pdf-mupdf"
+   	python-requests qutebrowser shellcheck surf tesseract-ocr \
+    	tesseract-data-ara tesseract-data-eng zathura zathura-pdf-mupdf"
 
 # Packages to install
 # You can add packages that you want and remove packages that you don't need
@@ -64,7 +63,7 @@ extra_pkgs="anki audacious beets calibre chromaprint dwarfs element-desktop fooy
 export packagelist="${audio_pkgs} ${core_pkgs} ${video_pkgs} ${extra_pkgs}"
 
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist="brave-bin vesktop-bin vscodium-bin betterbird-bin floorp-bin seamonkey-bin"
+export aur_packagelist="brave-bin vesktop-bin vscodium-bin betterbird-bin floorp-bin piper-tts-bin streamrip seamonkey-bin quickmedia-git"
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
