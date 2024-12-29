@@ -49,7 +49,7 @@ gaming_pkgs="lutris steam steam-native-runtime steamtinkerlaunch minigalaxy \
 	libretro-parallel-n64 libretro-pcsx2 libretro-picodrive libretro-ppsspp \
 	libretro-retrodream libretro-yabause pcsx2-avx-git"
 
-extra_pkgs="anki audacious beets calibre chromaprint dwarfs element-desktop fooyin \
+extra_pkgs="anki audacious beets calibre dwarfs element-desktop fooyin \
 	freetube gallery-dl gimp inkscape kodi libresprite krita \
  	libreoffice-fresh libreoffice-fresh-ar mpv mtpaint nicotine+ \
   	picard python-discogs-client python-pyacoustid python-pylast \
@@ -63,7 +63,7 @@ extra_pkgs="anki audacious beets calibre chromaprint dwarfs element-desktop fooy
 export packagelist="${audio_pkgs} ${core_pkgs} ${video_pkgs} ${extra_pkgs}"
 
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist="brave-bin vesktop-bin vscodium-bin betterbird-bin floorp-bin piper-tts-bin streamrip seamonkey-bin quickmedia-git"
+export aur_packagelist="brave-bin vesktop-bin vscodium-bin betterbird-bin floorp-bin piper-tts-bin onlyoffice-bin streamrip seamonkey-bin quickmedia-git"
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
