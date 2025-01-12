@@ -6,14 +6,13 @@
 ########################################################################
 
 # Package groups
-audio_pkgs="alsa-lib lib32-alsa-lib alsa-plugins lib32-alsa-plugins libpulse \
+audio_pkgs="alsa-lib lib32-alsa-lib alsa-plugins bluealsa bluez lib32-alsa-plugins libpulse \
 	lib32-libpulse alsa-tools alsa-utils pipewire lib32-pipewire pipewire-pulse pipewire-jack lib32-pipewire-jack"
 
 core_pkgs="xorg-xwayland qt6-wayland wayland \
 	lib32-wayland qt5-wayland xorg-server-xephyr gamescope"
 
-video_pkgs="mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon \
-	vulkan-intel lib32-vulkan-intel \
+video_pkgs="mesa lib32-mesa vulkan-intel lib32-vulkan-intel \
 	vulkan-icd-loader lib32-vulkan-icd-loader vulkan-mesa-layers \
 	lib32-vulkan-mesa-layers libva-mesa-driver lib32-libva-mesa-driver \
 	libva-intel-driver lib32-libva-intel-driver intel-media-driver \
@@ -51,18 +50,20 @@ gaming_pkgs="lutris python-protobuf steam steam-native-runtime steamtinkerlaunch
 	libretro-parallel-n64 libretro-pcsx2 libretro-picodrive libretro-ppsspp \
 	libretro-retrodream libretro-yabause pcsx2-avx-git"
 
-extra_pkgs="nano ttf-dejavu ttf-liberation firefox mpv geany pcmanfm \
-	htop qbittorrent speedcrunch gpicview file-roller openbox lxterminal \
-	yt-dlp minizip nautilus genymotion jre17-openjdk"
+extra_pkgs="anki audacious beets calibre dwarfs element-desktop fooyin \
+	freetube gallery-dl gimp inkscape kodi libresprite krita \
+ 	mpv mtpaint nicotine+ picard python-discogs-client python-pylast \
+   	python-requests qutebrowser shellcheck surf tesseract-ocr \
+    	tesseract-data-ara tesseract-data-eng zathura zathura-pdf-mupdf"
 
 # Packages to install
 # You can add packages that you want and remove packages that you don't need
 # Apart from packages from the official Arch repos, you can also specify
 # packages from the Chaotic-AUR repo
-export packagelist="${audio_pkgs} ${core_pkgs} ${video_pkgs} ${wine_pkgs} ${devel_pkgs} ${gaming_pkgs} ${extra_pkgs}"
+export packagelist="${audio_pkgs} ${core_pkgs} ${video_pkgs} ${wine_pkgs} ${gaming_pkgs} ${extra_pkgs}"
 
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist="faugus-launcher-git"
+export aur_packagelist="faugus-launcher-git brave-bin vesktop-bin vscodium-bin betterbird-bin floorp-bin piper-tts-bin onlyoffice-bin streamrip seamonkey-bin quickmedia-git"
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
