@@ -48,7 +48,8 @@ gaming_pkgs="lutris python-protobuf steam steam-native-runtime steamtinkerlaunch
 	libretro-blastem libretro-bsnes libretro-dolphin duckstation \
 	libretro-gambatte libretro-melonds libretro-mgba libretro-nestopia \
 	libretro-parallel-n64 libretro-pcsx2 libretro-picodrive libretro-ppsspp \
-	libretro-retrodream libretro-yabause pcsx2-avx-git"
+	libretro-retrodream libretro-yabause pcsx2-avx-git \
+	dwarfs fuse-overlayfs bubblewrap"
 
 extra_pkgs="anki audacious beets calibre dwarfs element-desktop fooyin \
 	freetube gallery-dl gimp inkscape kodi libresprite krita \
