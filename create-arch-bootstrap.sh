@@ -43,7 +43,7 @@ wine_pkgs="wine-staging winetricks-git wine-nine wineasio \
 devel_pkgs="base-devel git meson mingw-w64-gcc cmake"
 
 gaming_pkgs="lutris python-protobuf steam steam-native-runtime steamtinkerlaunch \
-	minigalaxy gamehub legendary prismlauncher bottles playonlinux obs-studio \
+	minigalaxy gamehub legendary prismlauncher bottles playonlinux \
 	retroarch retroarch-assets-ozone libretro-beetle-psx-hw sunshine \
 	libretro-blastem libretro-bsnes libretro-dolphin duckstation \
 	libretro-gambatte libretro-melonds libretro-mgba libretro-nestopia \
@@ -51,11 +51,10 @@ gaming_pkgs="lutris python-protobuf steam steam-native-runtime steamtinkerlaunch
 	libretro-retrodream libretro-yabause pcsx2-avx-git \
 	dwarfs fuse-overlayfs bubblewrap"
 
-extra_pkgs="anki audacious beets calibre dwarfs element-desktop fooyin \
-	freetube gallery-dl gimp inkscape kodi libresprite krita \
- 	mpv mtpaint nicotine+ picard python-discogs-client python-pylast \
+extra_pkgs="anki audacious beets calibre freetube gallery-dl gimp inkscape kodi libresprite krita \
+ 	mpv nicotine+ picard python-discogs-client python-pylast \
    	python-requests qutebrowser shellcheck surf tesseract-ocr \
-    	tesseract-data-ara tesseract-data-eng zathura zathura-pdf-mupdf"
+    	zathura zathura-pdf-mupdf quickmedia-git"
 
 # Packages to install
 # You can add packages that you want and remove packages that you don't need
@@ -64,7 +63,7 @@ extra_pkgs="anki audacious beets calibre dwarfs element-desktop fooyin \
 export packagelist="${audio_pkgs} ${core_pkgs} ${video_pkgs} ${wine_pkgs} ${gaming_pkgs} ${extra_pkgs}"
 
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist="faugus-launcher-git brave-bin vesktop-bin vscodium-bin betterbird-bin floorp-bin piper-tts-bin onlyoffice-bin streamrip seamonkey-bin quickmedia-git"
+export aur_packagelist="faugus-launcher-git brave-bin vesktop-bin vscodium-bin betterbird-bin floorp-bin piper-tts-bin onlyoffice-bin streamrip"
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
