@@ -51,10 +51,9 @@ gaming_pkgs="lutris python-protobuf steam steam-native-runtime steamtinkerlaunch
 	libretro-retrodream libretro-yabause pcsx2-avx-git \
 	dwarfs fuse-overlayfs bubblewrap"
 
-extra_pkgs="anki audacious beets calibre freetube gallery-dl gimp inkscape kodi libresprite krita \
- 	mpv nicotine+ picard python-discogs-client python-pylast \
-   	python-requests qutebrowser shellcheck surf tesseract-ocr \
-    	zathura zathura-pdf-mupdf quickmedia automedia ryujinx stremio ocrmypdf"
+extra_pkgs="anki audacity automedia audacious beets calibre freetube gallery-dl gimp inkscape kodi libresprite krita \
+ 	mpv nicotine+ picard qutebrowser quickmedia stremio shellcheck surf tesseract-ocr \
+    	imagemagick ungoogled-chromium zathura zathura-pdf-mupdf zed"
 
 # Packages to install
 # You can add packages that you want and remove packages that you don't need
@@ -63,7 +62,7 @@ extra_pkgs="anki audacious beets calibre freetube gallery-dl gimp inkscape kodi 
 export packagelist="${audio_pkgs} ${core_pkgs} ${video_pkgs} ${wine_pkgs} ${gaming_pkgs} ${extra_pkgs}"
 
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist="faugus-launcher-git brave-bin zen-browser-bin quickmedia automedia localsend-bin radarr-bin vesktop-bin vscodium-bin betterbird-bin floorp-bin piper-tts-bin onlyoffice-bin streamrip"
+export aur_packagelist="faugus-launcher-git localsend-bin radarr-bin vesktop-bin betterbird-bin floorp-bin piper-tts-bin onlyoffice-bin streamrip"
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
