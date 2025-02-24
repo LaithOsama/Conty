@@ -19,7 +19,7 @@ video_pkgs="mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon \
 	libva-intel-driver lib32-libva-intel-driver intel-media-driver \
 	mesa-utils vulkan-tools libva-utils lib32-mesa-utils"
 
-wine_pkgs="citron wine-staging winetricks-git wine-nine wineasio \
+wine_pkgs="wine-staging winetricks-git wine-nine wineasio \
 	freetype2 lib32-freetype2 libxft lib32-libxft \
 	flex lib32-flex fluidsynth lib32-fluidsynth \
 	libxrandr lib32-libxrandr xorg-xrandr libldap lib32-libldap \
@@ -44,8 +44,8 @@ wine_pkgs="citron wine-staging winetricks-git wine-nine wineasio \
 devel_pkgs="base-devel git meson mingw-w64-gcc cmake"
 
 gaming_pkgs="lutris python-protobuf steam steam-native-runtime steamtinkerlaunch \
-	minigalaxy gamehub legendary prismlauncher bottles playonlinux obs-studio \
-	ryujinx retroarch retroarch-assets-ozone libretro-beetle-psx-hw sunshine \
+	minigalaxy gamehub legendary prismlauncher bottles playonlinux \
+	retroarch retroarch-assets-ozone libretro-beetle-psx-hw sunshine \
 	libretro-blastem libretro-bsnes libretro-dolphin duckstation \
 	libretro-gambatte libretro-melonds libretro-mgba libretro-nestopia \
 	libretro-parallel-n64 libretro-pcsx2 libretro-picodrive libretro-ppsspp \
@@ -53,8 +53,7 @@ gaming_pkgs="lutris python-protobuf steam steam-native-runtime steamtinkerlaunch
 	dwarfs fuse-overlayfs bubblewrap"
 
 extra_pkgs="anki audacity audacious beets calibre freetube gallery-dl gimp inkscape kodi libresprite krita \
- 	mpv nicotine+ picard ollama ocrmypdf qutebrowser libreoffice-fresh libreoffice-fresh-ar \
-	ladybird searxng-git stremio shellcheck tesseract surf imagemagick jre17-openjdk zathura zathura-pdf-mupdf zed"
+ 	mpv nicotine+ picard ollama ocrmypdf qutebrowser ladybird searxng-git stremio shellcheck tesseract surf imagemagick zathura zathura-pdf-mupdf zed"
 
 # Packages to install
 # You can add packages that you want and remove packages that you don't need
@@ -63,7 +62,7 @@ extra_pkgs="anki audacity audacious beets calibre freetube gallery-dl gimp inksc
 export packagelist="${audio_pkgs} ${core_pkgs} ${video_pkgs} ${wine_pkgs} ${gaming_pkgs} ${extra_pkgs}"
 
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist="automedia faugus-launcher-git vesktop-bin quickmedia ungoogled-chromium-bin betterbird-bin floorp-bin piper-tts-bin onlyoffice-bin streamrip grayjay-bin zen-browser-bin"
+export aur_packagelist="automedia faugus-launcher-git vesktop-bin quickmedia ungoogled-chromium-bin betterbird-bin piper-tts-bin onlyoffice-bin streamrip grayjay-bin zen-browser-bin"
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
