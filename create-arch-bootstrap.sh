@@ -19,7 +19,7 @@ video_pkgs="mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon \
 	libva-intel-driver lib32-libva-intel-driver intel-media-driver \
 	mesa-utils vulkan-tools libva-utils lib32-mesa-utils"
 
-wine_pkgs="wine-staging winetricks-git wine-nine wineasio \
+wine_pkgs="citron wine-staging winetricks-git wine-nine wineasio \
 	freetype2 lib32-freetype2 libxft lib32-libxft \
 	flex lib32-flex fluidsynth lib32-fluidsynth \
 	libxrandr lib32-libxrandr xorg-xrandr libldap lib32-libldap \
@@ -39,21 +39,22 @@ wine_pkgs="wine-staging winetricks-git wine-nine wineasio \
 	gtk3 lib32-gtk3 vulkan-icd-loader lib32-vulkan-icd-loader \
 	sdl2 lib32-sdl2 vkd3d lib32-vkd3d libgphoto2 \
 	openssl-1.1 lib32-openssl-1.1 libnm lib32-libnm \
-	cabextract wget gamemode lib32-gamemode mangohud lib32-mangohud"
+	cabextract wget gamemode lib32-gamemode mangohud lib32-mangohud dotnet-runtime-7.0"
 
 devel_pkgs="base-devel git meson mingw-w64-gcc cmake"
 
 gaming_pkgs="lutris python-protobuf steam steam-native-runtime steamtinkerlaunch \
 	minigalaxy gamehub legendary prismlauncher bottles playonlinux obs-studio \
-	retroarch retroarch-assets-ozone libretro-beetle-psx-hw sunshine \
+	ryujinx retroarch retroarch-assets-ozone libretro-beetle-psx-hw sunshine \
 	libretro-blastem libretro-bsnes libretro-dolphin duckstation \
 	libretro-gambatte libretro-melonds libretro-mgba libretro-nestopia \
 	libretro-parallel-n64 libretro-pcsx2 libretro-picodrive libretro-ppsspp \
-	libretro-retrodream libretro-yabause pcsx2-avx-git"
+	libretro-retrodream libretro-yabause pcsx2-avx-git \
+	dwarfs fuse-overlayfs bubblewrap fuse-common fuse-overlayfs fuse3"
 
-extra_pkgs="nano ttf-dejavu ttf-liberation firefox mpv geany pcmanfm \
-	htop qbittorrent speedcrunch gpicview file-roller openbox lxterminal \
-	yt-dlp minizip nautilus genymotion jre17-openjdk"
+extra_pkgs="anki audacity automedia audacious beets calibre davinci-resolve freetube gallery-dl gimp inkscape kodi libresprite krita \
+ 	mpv nicotine+ picard ollama ocrmypdf qutebrowser libreoffice-fresh libreoffice-fresh-ar	ladybird searxng-git rsgain stremio shellcheck surf ttf-dejavu ttf-liberation tesseract-ocr \
+    	imagemagick jre17-openjdk zathura zathura-pdf-mupdf zed"
 
 # Packages to install
 # You can add packages that you want and remove packages that you don't need
@@ -62,7 +63,7 @@ extra_pkgs="nano ttf-dejavu ttf-liberation firefox mpv geany pcmanfm \
 export packagelist="${audio_pkgs} ${core_pkgs} ${video_pkgs} ${wine_pkgs} ${devel_pkgs} ${gaming_pkgs} ${extra_pkgs}"
 
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist="faugus-launcher-git"
+export aur_packagelist="faugus-launcher-git vesktop-bin quickmedia ungoogled-chromium-bin betterbird-bin floorp-bin piper-tts-bin onlyoffice-bin streamrip grayjay-bin zen-browser-bin"
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
