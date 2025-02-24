@@ -50,18 +50,17 @@ gaming_pkgs="lutris python-protobuf steam steam-native-runtime steamtinkerlaunch
 	libretro-gambatte libretro-melonds libretro-mgba libretro-nestopia \
 	libretro-parallel-n64 libretro-pcsx2 libretro-picodrive libretro-ppsspp \
 	libretro-retrodream libretro-yabause pcsx2-avx-git \
-	dwarfs fuse-overlayfs bubblewrap fuse-common fuse-overlayfs fuse3"
+	dwarfs fuse-overlayfs bubblewrap"
 
 extra_pkgs="anki audacity audacious beets calibre freetube gallery-dl gimp inkscape kodi libresprite krita \
- 	mpv nicotine+ picard ollama ocrmypdf qutebrowser libreoffice-fresh libreoffice-fresh-ar	ladybird searxng-git stremio shellcheck \
-  	tesseract tesseract-data-ara tesseract-data-eng surf ttf-dejavu ttf-liberation \
-    	imagemagick jre17-openjdk zathura zathura-pdf-mupdf zed"
+ 	mpv nicotine+ picard ollama ocrmypdf qutebrowser libreoffice-fresh libreoffice-fresh-ar \
+	ladybird searxng-git stremio shellcheck tesseract surf imagemagick jre17-openjdk zathura zathura-pdf-mupdf zed"
 
 # Packages to install
 # You can add packages that you want and remove packages that you don't need
 # Apart from packages from the official Arch repos, you can also specify
 # packages from the Chaotic-AUR repo
-export packagelist="${audio_pkgs} ${core_pkgs} ${video_pkgs} ${wine_pkgs} ${devel_pkgs} ${gaming_pkgs} ${extra_pkgs}"
+export packagelist="${audio_pkgs} ${core_pkgs} ${video_pkgs} ${wine_pkgs} ${gaming_pkgs} ${extra_pkgs}"
 
 # If you want to install AUR packages, specify them in this variable
 export aur_packagelist="automedia faugus-launcher-git vesktop-bin quickmedia ungoogled-chromium-bin betterbird-bin floorp-bin piper-tts-bin onlyoffice-bin streamrip grayjay-bin zen-browser-bin"
