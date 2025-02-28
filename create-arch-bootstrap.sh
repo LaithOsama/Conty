@@ -52,14 +52,14 @@ gaming_pkgs="lutris python-protobuf steam steam-native-runtime steamtinkerlaunch
 	libretro-retrodream libretro-yabause pcsx2-avx-git \
 	dwarfs fuse-overlayfs bubblewrap"
 
-extra_pkgs="anki audacity audacious beets calibre freetube gallery-dl gimp kodi libreoffice-fresh libreoffice-fresh-ar libresprite krita \
+extra_pkgs="anki audacity audacious beets calibre freetube gallery-dl gimp kodi libreoffice-fresh libreoffice-fresh-ar libresprite \
  	mpv nicotine+ picard ollama ocrmypdf qutebrowser stremio shellcheck tesseract surf imagemagick zathura zathura-pdf-mupdf zed"
 
 # Packages to install
 # You can add packages that you want and remove packages that you don't need
 # Apart from packages from the official Arch repos, you can also specify
 # packages from the Chaotic-AUR repo
-export packagelist="${audio_pkgs} ${core_pkgs} ${video_pkgs} ${wine_pkgs} ${devel_pkgs} ${gaming_pkgs} ${extra_pkgs}"
+export packagelist="${audio_pkgs} ${core_pkgs} ${video_pkgs} ${wine_pkgs} ${gaming_pkgs} ${extra_pkgs}"
 
 # If you want to install AUR packages, specify them in this variable
 export aur_packagelist="automedia faugus-launcher-git vesktop-bin quickmedia ungoogled-chromium-bin betterbird-bin piper-tts-bin onlyoffice-bin streamrip grayjay-bin zen-browser-bin"
