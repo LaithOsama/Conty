@@ -52,8 +52,9 @@ gaming_pkgs="lutris python-protobuf steam steam-native-runtime steamtinkerlaunch
 	libretro-retrodream libretro-yabause pcsx2-avx-git \
 	dwarfs fuse-overlayfs bubblewrap"
 
-extra_pkgs="anki audacity audacious beets calibre freetube gallery-dl gimp kodi libreoffice-fresh libreoffice-fresh-ar libresprite \
- 	mpv nicotine+ picard ollama ocrmypdf qutebrowser stremio shellcheck tesseract surf imagemagick zathura zathura-pdf-mupdf zed"
+extra_pkgs="anki audacity audacious beets calibre freetube gallery-dl gimp kodi lmstudio languagetool libreoffice-fresh libreoffice-fresh-ar libresprite-git \
+ 	mpv nicotine+ picard ollama ocrmypdf qutebrowser stremio shellcheck tesseract surf imagemagick zathura zathura-pdf-mupdf \
+  	python-pytorch-opt python-transformers python-torchvision python-sentence-transformers onnxruntime-opt onednn hydrus"
 
 # Packages to install
 # You can add packages that you want and remove packages that you don't need
@@ -62,7 +63,9 @@ extra_pkgs="anki audacity audacious beets calibre freetube gallery-dl gimp kodi 
 export packagelist="${audio_pkgs} ${core_pkgs} ${video_pkgs} ${wine_pkgs} ${gaming_pkgs} ${extra_pkgs}"
 
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist="automedia faugus-launcher-git vesktop-bin quickmedia ungoogled-chromium-bin betterbird-bin piper-tts-bin onlyoffice-bin streamrip grayjay-bin zen-browser-bin"
+export aur_packagelist="automedia betterbird-bin coqui-tts cursor-free-vip-git deeplx-bin electron-deepseek \
+	faugus-launcher-git vesktop-bin quickmedia ungoogled-chromium-bin realesrgan-ncnn-vulkan-bin \ 
+ 	piper-tts-bin onlyoffice-bin streamrip upscayl-bin grayjay-bin"
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
