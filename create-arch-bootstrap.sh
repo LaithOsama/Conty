@@ -10,9 +10,9 @@ audio_pkgs="alsa-lib lib32-alsa-lib alsa-plugins lib32-alsa-plugins libpulse \
 	lib32-libpulse alsa-tools alsa-utils pipewire lib32-pipewire pipewire-pulse pipewire-jack lib32-pipewire-jack"
 
 core_pkgs="xorg-xwayland qt6-wayland wayland \
-	lib32-wayland qt5-wayland xorg-server-xephyr gamescope"
+	lib32-wayland qt5-wayland xorg-server-xephyr"
 
-video_pkgs="mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon \
+video_pkgs="mesa lib32-mesa \
 	vulkan-intel lib32-vulkan-intel \
 	vulkan-icd-loader lib32-vulkan-icd-loader vulkan-mesa-layers \
 	lib32-vulkan-mesa-layers libva-mesa-driver lib32-libva-mesa-driver \
@@ -60,7 +60,7 @@ extra_pkgs="anki audacity audacious beets calibre freetube gallery-dl gimp kodi 
 # You can add packages that you want and remove packages that you don't need
 # Apart from packages from the official Arch repos, you can also specify
 # packages from the Chaotic-AUR repo
-export packagelist="${audio_pkgs} ${core_pkgs} ${video_pkgs} ${wine_pkgs} ${extra_pkgs}"
+export packagelist="${core_pkgs} ${video_pkgs} ${wine_pkgs} ${extra_pkgs}"
 
 # If you want to install AUR packages, specify them in this variable
 export aur_packagelist="automedia betterbird-bin coqui-tts cursor-free-vip-git deeplx-bin electron-deepseek \
