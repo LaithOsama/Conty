@@ -60,7 +60,7 @@ extra_pkgs="anki audacity audacious beets calibre freetube gallery-dl gimp kodi 
 # You can add packages that you want and remove packages that you don't need
 # Apart from packages from the official Arch repos, you can also specify
 # packages from the Chaotic-AUR repo
-export packagelist="${audio_pkgs} ${core_pkgs} ${video_pkgs} ${wine_pkgs} ${gaming_pkgs} ${extra_pkgs}"
+export packagelist="${audio_pkgs} ${core_pkgs} ${video_pkgs} ${wine_pkgs} ${extra_pkgs}"
 
 # If you want to install AUR packages, specify them in this variable
 export aur_packagelist="automedia betterbird-bin coqui-tts cursor-free-vip-git deeplx-bin electron-deepseek \
