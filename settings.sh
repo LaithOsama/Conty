@@ -49,12 +49,13 @@ PACKAGES=(
 	# libretro-parallel-n64 libretro-picodrive libretro-ppsspp
 	# libretro-retrodream libretro-yabause pcsx2-avx-git
 	# extra
-	anki audacity audacious beets calibre freetube gallery-dl gimp kodi lmstudio
+	anki audacity audacious beets calibre freetube gallery-dl gimp kodi
  	languagetool libreoffice-fresh libreoffice-fresh-ar libresprite-git
 	mpv nicotine+ picard ollama ocrmypdf qutebrowser stremio shellcheck
- 	tesseract surf imagemagick zathura zathura-pdf-mupdf hydrus
-  	python-pytorch-opt python-transformers python-torchvision python-sentence-transformers
+ 	tesseract imagemagick zathura zathura-pdf-mupdf
+  	python-pytorch-opt python-torchvision
    	onnxruntime-opt onednn dwarfs fuse-overlayfs bubblewrap
+    	# surf hydrus lmstudio python-sentence-transformers python-transformers
 )
 
 # If you want to install AUR packages, specify them in this variable
