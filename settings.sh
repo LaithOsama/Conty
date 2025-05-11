@@ -37,25 +37,32 @@ PACKAGES=(
 	gtk3 lib32-gtk3 vulkan-icd-loader lib32-vulkan-icd-loader
 	sdl2-compat lib32-sdl2-compat vkd3d lib32-vkd3d libgphoto2
 	openssl-1.1 lib32-openssl-1.1 libnm lib32-libnm
-	cabextract wget gamemode lib32-gamemode mangohud lib32-mangohud
+	cabextract wget gamemode lib32-gamemode mangohud lib32-mangohud dotnet-runtime-7.0
 	# development
-	base-devel git meson mingw-w64-gcc cmake
+	# base-devel git meson mingw-w64-gcc cmake
 	# gaming
-	lutris python-protobuf steam steam-native-runtime steamtinkerlaunch
-	minigalaxy gamehub legendary prismlauncher bottles playonlinux obs-studio
-	retroarch retroarch-assets-ozone libretro-beetle-psx-hw sunshine
-	libretro-blastem libretro-bsnes libretro-dolphin duckstation
-	libretro-gambatte libretro-melonds libretro-mgba libretro-nestopia
-	libretro-parallel-n64 libretro-picodrive libretro-ppsspp
-	libretro-retrodream libretro-yabause pcsx2-avx-git
+	# lutris python-protobuf steam steam-native-runtime steamtinkerlaunch
+	# minigalaxy gamehub legendary prismlauncher bottles playonlinux obs-studio
+	# retroarch retroarch-assets-ozone libretro-beetle-psx-hw sunshine
+	# libretro-blastem libretro-bsnes libretro-dolphin duckstation
+	# libretro-gambatte libretro-melonds libretro-mgba libretro-nestopia
+	# libretro-parallel-n64 libretro-picodrive libretro-ppsspp
+	# libretro-retrodream libretro-yabause pcsx2-avx-git
 	# extra
-	nano ttf-dejavu ttf-liberation firefox mpv geany pcmanfm
-	htop qbittorrent speedcrunch gpicview file-roller openbox lxterminal
-	yt-dlp minizip nautilus genymotion jre17-openjdk gnome-themes-extra
+	anki audacity audacious beets calibre freetube gallery-dl gimp kodi lmstudio
+ 	languagetool libreoffice-fresh libreoffice-fresh-ar libresprite-git
+	mpv nicotine+ picard ollama ocrmypdf qutebrowser stremio shellcheck
+ 	tesseract surf imagemagick zathura zathura-pdf-mupdf hydrus
+  	python-pytorch-opt python-transformers python-torchvision python-sentence-transformers
+   	onnxruntime-opt onednn dwarfs fuse-overlayfs bubblewrap
 )
 
 # If you want to install AUR packages, specify them in this variable
-AUR_PACKAGES=(faugus-launcher-git)
+AUR_PACKAGES=(
+	automedia betterbird-bin coqui-tts cursor-free-vip-git deeplx-bin electron-deepseek
+	vesktop-bin quickmedia ungoogled-chromium-bin realesrgan-ncnn-vulkan-bin
+ 	piper-tts-bin onlyoffice-bin streamrip upscayl-bin grayjay-bin
+)
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
